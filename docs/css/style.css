@@ -2,7 +2,7 @@ body{
 	background: #FFFFFF  url("https://raw.githubusercontent.com/dipaish/www_dkc/master/images/bg.jpg") repeat-x;
 	}
 #wrap{
-	width:699px;
+	width:1000px;
 	margin:0px auto 15px auto;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	font-size:12px;
@@ -55,7 +55,7 @@ body{
 	background-color: #FFFFFF;
 }
 #mainpage {
-	width:700px;
+	width:900px;
 	float:left;
 	padding:5px 5px 5px 0px;
 	height:auto
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5 {
 /*footer*/
 #footer {
 	margin:0 auto;
-	width:685px;
+	width:900px;
 	height:20px;
 	padding:10px;
 	color:#FFFFFF;
