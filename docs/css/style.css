@@ -24,7 +24,7 @@ body{
 	float: right;
 	width: 415px;
 	background-color:black;
-	position: fixed;
+	#position: fixed;
 }
 #topmenu li {
 	display:inline;
