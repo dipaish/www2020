@@ -4,7 +4,6 @@
   <head>
     <title>WWW ja Internet - 2017</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    
   </head>
   <body>
     <div id="wrap">     
@@ -15,21 +14,21 @@
           </li>
             <li><a href="#html5">HTML5</a></span>
             </li>
-            <li><a href="#create">CSS</a>
+            <li><a href="#css">CSS</a>
             </li>
-            <li><a href="#">HTML Layouts & Table</a>
+            <li><a href="#layout">HTML Layouts & Table</a>
             </li>
-            <li><a href="#contactus">HTML Forms</a>
+            <li><a href="#forms">HTML Forms</a>
             </li>
-            <li><a href="#contactus">Bootstrap</a>
-              <li><a href="#contactus">Website Interface & Visualisatin</a>
+            <li><a href="#bootstrap">Bootstrap</a>
+              <li><a href="#interface">Website Interface & Visualisatin</a>
             </li>
-            <li><a href="#contactus">SEO</a>
+            <li><a href="#seo">SEO</a>
             </li>
-            <li><a href="#contactus">Web design for Mobile Devices</a>
+            <li><a href="#mobile">Web design for Mobile Devices</a>
             </li>
-            <li><a href="#contactus">WWW Project</a>
-              <li><a href="#contactus">Webhosting</a>
+            <li><a href="project">WWW Project</a>
+              <li><a href="hosting">Webhosting</a>
               </li>
             </ul>
             </div>
@@ -38,13 +37,14 @@
 
 <div id="content">
 <div id="mainpage">
-  <h1 id="html">What is HTML?</h1>
+  <h1 id="html">1. What is HTML?</h1>
   <p>
     Hypertext Markup Language (HTML) is the standard markup language for documents that are designed to be displayed in a web browser. 
 HTML is not a programming language. It is a markup language
 that tells browser how to structure a web page. 
   </p>
   <h2>A sime HTML document looks like this</h2>
+  
   <xmp>
     <!DOCTYPE html>
     <html lang="en">
@@ -58,10 +58,23 @@ that tells browser how to structure a web page.
      </body>
     </html>
     </xmp>
-    
+    <h3>Elements</h3>
+    <p>
+      As in the above example, html document consists of a <b>tree</b>
+      of elements and text. Each element starts with a <b>tag </b>
+      and ends with a tag. Tags have to be <b> nested </b>such that 
+      they are completely within each other without <b>overlapping </b>. 
+  </p>
+  <xmp>
+    <p>This <em>is <strong>correct</strong>.</em></p>
+    <p>This is <em>very <strong>wrong</em>!</strong></p>
+  </xmp>
+  <p class="note">
+    Note: Tags in HTML are case-insensitive, i.e. they can be written in uppercase or lowercase. 
+    Best practice, however, is to write all tags in lowercase for consistency, readability, and other reasons.
+  </p>
     <hr>
-  <h1 id="html5"> Introduction to HTML5 </h1>
-    <h2> What is HTML5? </h2>
+  <h1 id="html5">2. What is HTML5 ? </h1>
     <p>HTML5 is the most enhanced and latest version of HTML that is used for structuring and presenting content on the World WIde Web.
       It is a mark up language. HTML5 incorporates features such as drag and drop and video playback which earlier were dependent on third party 
       browser plugins such as Adobe Flash or Microsoft Silverlight </p>
@@ -100,7 +113,14 @@ that tells browser how to structure a web page.
       <li> Avoid spaces in your filesnames as browsers replace spaces in your filename
         with characters %20 that can confuse users </li>
     </ol> 
-
+<hr>
+<h1 id="css">3. CSS </h1>
+<hr>
+<h1 id="layout">4. HTML Layouts & Table </h1>
+<hr>
+<h1 id="forms">5. HTML Forms </h1>
+<hr>
+<h1 id="bootstrap">6. Bootstrap </h1>
   </div>
   </div>
   <div id="footer">
@@ -110,5 +130,6 @@ that tells browser how to structure a web page.
 </p>
   </div>
     </div>
+    
   </body>
 </html>
