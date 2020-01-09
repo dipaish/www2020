@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <html>
   <head>
-    <title>WWW ja Internet - 2017</title>
+    <title>Introduction to Web Development - HTML, CSS & Bootstrap</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -86,6 +86,11 @@ that tells browser how to structure a web page.
     <p>This <em>is <strong>correct</strong>.</em></p>
     <p>This is <em>very <strong>wrong</em>!</strong></p>
   </xmp>
+  <p class="note">
+    Note: Tags in HTML are case-insensitive, i.e. they can be written in uppercase or lowercase. 
+    Best practice, however, is to write all tags in lowercase for consistency, readability, and other reasons.
+  </p>
+
   There are two important categories of elements in HTML. 
   <ul>
     <li>Block Level Elements:</li>
@@ -101,17 +106,86 @@ that tells browser how to structure a web page.
       <p>paragraph 1</p><p>paragraph 2</p><p>paragraph 3</p><p>paragraph 4</p>
     </xmp> 
   </ul>
-  <p class="note">
-    Note: Tags in HTML are case-insensitive, i.e. they can be written in uppercase or lowercase. 
-    Best practice, however, is to write all tags in lowercase for consistency, readability, and other reasons.
-  </p>
 
+  <h2>Whitespaces in HTML </h2>
+  <p>The whitespace includes space characters as well as line breaks. You can have lots of whitespaces in your code but the HTML parser
+  reduces space(s) or line breaks into a single space when rendering the HTML code. There is no reason to use more white spaces as it
+  might affect the readability if it is not nicely formatted. </p>
+  <xmp>
+    <p> this is properly formatted in terms of whitespaces</p>
+    <p>this is 
+      very                    random and is not effective enough when 
+      reading 
+      the 
+      code. 
+    </p>
+  </xmp>
+<h2> Using Special Characters in HTML</h2>
+<p>
+  <b >&lt;, &gt; , &quot; and &amp; </b> are special characters which are parts of HTML syntax, Therfore, when you need to 
+  use them in your html code you need to use the character equivalent as in the table below, to not have it interpreted as code. 
+</p>
+<table >
+  <tr>
+    <td>HTML Character</td><td>Equivalent Character Reference</td>
+  </tr>
+  <tr>
+    <td>&lt;</td><td><xmp class="list">&lt;</xmp></td>
+  </tr>
+  <tr>
+    <td>&gt;</td><td><xmp class="list">&gt;</xmp></td>
+  </tr>
+  <tr>
+    <td>&quot;</td><td><xmp class="list">&quot;</xmp></td>
+  </tr>
+  <tr>
+    <td>&apos;</td><td><xmp class="list">&apos;</xmp></td>
+  </tr>
+  <tr>
+    <td>&amp;</td><td><xmp class="list">&amp;</xmp></td>
+  </tr>
+  </table>
+<h2> Comments in HTML</h2>
 
-
-
-
-
+<p>
+  It is a good idea to write comments whereever applicable. Comments are ignored by the browser and are invisible to the user. <br>
+ <b> To type comment in HTML: </b>
+  &lt;!-- comment 
+  asdsad
+  asdasda
+  --&gt;
+  <!-- this is a comment
+  it can go to multiple lines-->
+</p>
+<h1>Tools for web development</h1>
+<p>You need atleast some of the following tools to get started with web development. Depending on your development activity (frontend, backed or full stack), you will need 
+  some of the following tools. You will need at the minumm code or text editor and a browser.</p>
+  <ol>
+    <li><b>Code or Text editors:</b> Sublime Text, Notepad++, <b>Visual Code Studio</b></li>
+    <li><b>Front-End Frameworks:</b> Bootstrap, Semantic-UI, Material UI</li>
+    <li><b>Web Application Frameworks:</b> Django, Angular, ReactJS</li>
+    <li><b>Package Managers:</b> NPM, Yarn, Material UI</li>
+    <li><b>Git Clients:</b> Github, Github Desktop </li>
+    <li><b>Web Design & Prototyping Tools:</b> Figma, Protooie, Framer</li>
+    <li><b>Image Editing:</b> Adobe Photoshop, Gimp</li>
+  </ol>
+  <h2>To learn more:</h2>
+ <a href="https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn" target="blank"> https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn </a><br>
+ <a href="https://www.w3schools.com/html/default.asp" target="blank">https://www.w3schools.com/html/default.asp</a>
+ <h1>Exercise 1: Text Formatting</h1> 
+ <p>Visit any website of your choice. Make an HTML page that has roughly the same content. You don't need to worry about formats, backgrounds or colors. The main objective is to 
+ use elements and tags correctly in HTML. You will includ all codes that are explained in the lecture. The formatting for the text could be as below: </p>
+ <ul>
+   <li>Start yout html code with doctype, head and a proper title. </li>
+   <li>The top level heading of the page can be heading 1</li>
+   <li> Put some random text pieces in the the &lt;p&gt; tag</li>
+   <li>Add a couple of random link to some external pages.</li>
+   <li>Make some part of your text bold</li>
+  </ul>
+ 
     <hr>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p><p>&nbsp;</p> 
   <h1 id="html5">2. What is HTML5 ? </h1>
     <p>HTML5 is the most enhanced and latest version of HTML that is used for structuring and presenting content on the World WIde Web.
       It is a mark up language. HTML5 incorporates features such as drag and drop and video playback which earlier were dependent on third party 

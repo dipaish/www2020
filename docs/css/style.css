@@ -112,12 +112,12 @@ h1, h2, h3, h4, h5 {
 	height:78px;
 }
 table {
-border-spacing: 5px;
+border-spacing: 0px;
 }
 
 table, th, td {
 border:1px solid red;
-padding: 15px;	
+padding: 2px;	
 }
 th {
 text-align: left;
@@ -144,6 +144,6 @@ xmp.list {
 	border-style: none;
 	color:black;
 	font-style: italic;
-	font-size: 13px;
+	font-size: 12px;
 
 }
