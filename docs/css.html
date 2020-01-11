@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+  <head>
+    <title>Introduction to Web Development - HTML, CSS & Bootstrap</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrap">   
+        <div id="content">
+            <div id="mainpage">
+                <!--[if IE]>
+              <p class="note">This page works perfectly fine with mobile devices and all major 
+                browsers such as Firefox or Google Chrome. Please use at your own risk with Internet Explorer.</p>
+              <![endif]-->
+
+<h1>What is CSS?</h1>
+<p><b>CSS (Cascading Style Sheets)</b> is a style sheet 
+language for creating great-looking web pages. It
+describes the presentation of elements in a document. </p>
+<img src="images/css.PNG">
+<h2>Inline css</h2>
+<p>It is often used to apply a style for a single html element.</p>
+<p>To add inline css, you can simply add the style to the corresponding
+    element. 
+</p>
+<h3>Example</h3>
+<xmp><h1 style="color:brown;text-align:left;">This is my heading</h1> </xmp>
+<xmp><p style="color:red;">This is a paragraph.</p></xmp>
+<h2>Embedded css</h2>
+<p>
+    The embedded css or the internal css is written inside
+    the &lt;style&gt; element in the &lt;head&gt; section of your HTML 
+    document. 
+</p>
+<h3>Example of embedded css</h3>
+<xmp>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    body {
+      background-color:red;
+    }
+    h1 {
+      color: blue;
+    }
+    </style>
+    </head>
+    <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    </body>
+    </html>
+</xmp>
+<h2>External css</h2>
+<p>The best way of adding a CSS to your html document
+    is by creating a css file with an extension <b>.css.
+</b>
+</p>
+
+
+
+<h2>Linking the css </h2>
+<p >To link style.css to index.html add one of the following line somewhere inside the &lt;head&gt; of the HTML document<br>
+    <code>
+        &lt;link rel="stylesheet" href="style.css"&gt; <br>
+        &lt;link href="css/style.css" rel="stylesheet" type="text/css"&gt;<br>
+        &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"&gt;
+    </code>
+<h2>CSS: Class, ID & Divisons</h2>
+<h2>Example CSS Layout</h2>
+            </div>
+        </div>
+    <div id="footer">
+        <p>Deepak KC <br><br><img src="https://licensebuttons.net/l/by-sa/3.0/88x31.png" >
+        <br><br> 
+        <a class="external" href="http://creativecommons.org/licenses/by-sa/2.5/" rel="noopener" target="blank">CC-BY-SA 2.5</a>
+        </p>
+    </div>
+    </div>                
+</body>
+    </html>

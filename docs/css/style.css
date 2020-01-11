@@ -95,13 +95,11 @@ overflow: scroll;
 }
 xmp {
 	
-	color:brown;
+	color:rgb(81, 42, 189);
 	font-style: italic;
 	font-size: 14px;
 	max-width: 900px;
 	padding: 5px;
-	
-	background:#d0db91;
 	}
 xmp.list {
 	border-style: none;
