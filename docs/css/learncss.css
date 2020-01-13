@@ -66,13 +66,29 @@ article > p {
     font-weight: bold;
 }
 /* Background Colors: It defines the background color for any 
-element in CSS.*/
+element in CSS.
+
+Background Image: it defines the background image. The image link is
+not correctly written,lets learn to use inspect element in browser and 
+fix the link for image */
 header{
     background-color: rgb(80, 190, 29);
-    background-image:url("/images/th.jpeg");
+    background-image:url("images/th.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100px 10em;
 }
 mytitle {
     
-    background-image:url("/images/th.jpeg");
+    background-image:url("images/th.jpeg");
     background-color: rgb(206, 228, 13);
 }
+
+/* You can also use multiple background images
+The first backgound will be image1.png, 
+second image2.png and third image3.png */
+.multipleBg {
+    background-image: url("image1.png"), url("image2.png"), url("image3.png");
+
+}
+/* Check yourself Borders, rounded corners, text-direction, margin,padding, 
+the overflow property, css values and units, */
