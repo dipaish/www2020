@@ -1,0 +1,11 @@
+/* Example of inline css
+<h1 style="color: red;">My heading</h1>
+*/
+/* to change h2 element's style: color red font size:14 px ..*/
+h2{
+    color: red;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}
+/* CSS selectors to style element */
