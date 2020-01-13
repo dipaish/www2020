@@ -67,11 +67,12 @@ article > p {
 }
 /* Background Colors: It defines the background color for any 
 element in CSS.*/
-header1{
+header{
     background-color: rgb(80, 190, 29);
+    background-image:url("images/th.jpeg");
 }
 mytitle {
     
-    background-image:url("/images/th.jpeg");
+    background-image:url("images/th.jpeg");
     background-color: rgb(206, 228, 13);
 }
