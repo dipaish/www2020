@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*  Flexcontainer in a row. */
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  align-content: space-between;
+}
+
+.flexContainer > div, div {
+  background-color: yellow;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  width: fit-content;
+}
+/*  Flexcontainer in a column: use flex-direction:column;. */
+.flexContainerCol {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: red;
+  flex-direction: column;
+}
+
+/* Flex-grow, to have different sizes of flex box */
+.flexgrowcon {
+  display:flex;
+  align-items: stretch;
+  background-color: blue;
+}
+
+</style>
+</head>
+<body>
+<h1>Example of Flexible Boxes in a row </h1>
+
+<div class="flexContainer">
+  <div>1 Hello World </div>
+  <div>2 This is fun</div>
+  <div>3 May be</div>  
+  <div>4 I don't know.</div>
+</div>
+<h1>Example of Flexible Boxes in a column </h1>
+
+<div class="flexContainerCol">
+  <div>1 Hello World </div>
+  <div>2 This is fun</div>
+  <div>3 May be</div>  
+  <div>4 I don't know.</div>
+</div>
+<h1>Example of Flexible Boxes with Flex-grow property </h1>
+
+<div class="flexgrowcon">
+  <div style="flex-grow: 1;">1 Hello World </div>
+  <div style="flex-grow: 3;">2 This is fun</div>
+  <div style="flex-grow: 6;">3 May be</div>  
+</div>
+</body>
+</html>

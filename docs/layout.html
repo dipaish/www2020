@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+  <head>
+    <title>Introduction to Web Development - HTML, CSS & Bootstrap</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrap">   
+        <div id="content">
+            <div id="mainpage">
+                <!--[if IE]>
+              <p class="note">This page works perfectly fine with mobile devices and all major 
+                browsers such as Firefox or Google Chrome. Please use at your own risk with Internet Explorer.</p>
+              <![endif]-->
+<h1>Buidling a layout for HTML pages</h1>
+<p>We can usee <b>CSS</b> to create page layouts and control the position of our html 
+    elemets. There are several layout techniques however we will go through
+some of them</p>
+<h2>Normal Flow</h2>
+<p>You don't do anything for the layout, the normal flow will take the html 
+    elements as you have written them in your html code. The elements will be displayed
+    in the <b>same order</b> as it appears in the <b>source code</b>. The elements that appear
+    one after another are <b>block elements</b> and the ones that appear in the same
+    line are <b>inline elements</b>. <br>
+</p>
+<strong>Example of Normal Flow layout:</strong> <br><br>
+<img src="images/nlayout.png">
+<h2>Flexbox</h2>
+<p>The flexbox make things easier to put html elemets either in a row or a column. </p>
+<p>To use flex box, you use <b>display:flex </b> to the parent html element. All child elements
+with then become flext items.</p>
+<p class="note">
+   Unfortunately, Flexbox is not supported in Internet Explorer 10 or earlier versions.
+</p>
+<strong>Example of a flexbox layout:</strong>
+<a href="flexbox.html">Link to the Example file</a>
+<h2>Floats</h2>
+<p>The float property was introduced to allow web developers to 
+    implement simple layouts involving an image floating inside 
+    a column of text, with the text wrapping around the left or right of it.
+     The kind of thing you might get in a newspaper layout.
+    Floats  are commonly used to 
+    create entier website layouts.
+</p>
+<strong>Example of a flexbox layout:</strong>
+<a href="floatexample.html">Link to the Example file</a>
+            </div>
+        </div>
+    <div id="footer">
+        <p>Deepak KC <br><br><img src="https://licensebuttons.net/l/by-sa/3.0/88x31.png" >
+        <br><br> 
+        <a class="external" href="http://creativecommons.org/licenses/by-sa/2.5/" rel="noopener" target="blank">CC-BY-SA 2.5</a>
+        </p>
+    </div>
+    </div>                
+</body>
+    </html>
