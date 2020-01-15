@@ -13,4 +13,5 @@ footer {
 }
 .container {
     background-color: white;
+    max-width:960px;
 }
