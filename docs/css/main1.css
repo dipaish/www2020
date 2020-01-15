@@ -1,0 +1,16 @@
+body {
+    background-image:url(bgg4.jpg);
+    background-repeat: repeat;
+}
+footer {
+    background-color: rgb(45, 9, 9);
+    color:black;
+}
+.greenbg {
+    background-color: rgb(45, 9, 9);
+    color:rgba(255, 255, 255, 0.877);
+    
+}
+.container {
+    background-color: white;
+}
