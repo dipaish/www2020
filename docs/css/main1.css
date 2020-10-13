@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(70, 122, 165, 0.79);
+}
+footer {
+    background-color: rgb(45, 9, 9);
+    color:black;
+}
+.greenbg {
+    background-color: rgb(45, 9, 9);
+    color:rgba(255, 255, 255, 0.877);
+    
+}
+.container {
+    background-color: white;
+    max-width:960px;
+}
+
+.center {
+    display: block;
+    
+    max-width:100%; 
+    height:auto;
+  }
