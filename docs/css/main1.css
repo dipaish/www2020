@@ -21,3 +21,88 @@ footer {
     max-width:100%; 
     height:auto;
   }
+
+ 
+  
+ p {
+	line-height:22px;
+	margin:10px 0px 10px 0px;
+	text-align: justify;
+}
+ blockquote {
+	background:#efefef;
+	display:block; 
+	margin:5px;
+	font:Georgia, "Times New Roman", Times, serif; 
+	font-style:italic;}
+h1, h2, h3, h4, h5 {
+	color:#A52A2A;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+ h1 {
+	font-size:24px;
+}
+ h2 {
+	font-size:18px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #B52E10;
+}
+ h3 {
+	font-size:15px;
+	color:rgb(37, 2, 2)}
+ h4 {
+	font-size:18px;}
+h5 {
+	font-size:16px;}
+
+
+
+
+table {
+border-spacing: 0px;
+}
+
+table, th, td {
+border:1px solid red;
+padding: 2px;	
+}
+th {
+text-align: left;
+}
+
+table#t1 {
+width: 75%;
+background-color: yellow;
+border: 1px;
+}
+
+p.note {
+border-style: double;
+color:red;
+font-style: italic;
+
+}
+xmp {
+	
+	color:rgb(81, 42, 189);
+	font-style: italic;
+	font-size: 14px;
+	max-width: 900px;
+	padding: 5px;
+	}
+xmp.list {
+	border-style: none;
+	color:black;
+	font-style: italic;
+	font-size: 14px;
+	
+
+}
+code {
+	color:rgb(128, 6, 6);
+	font: bold 12px/30px Georgia, serif;
+	background-color: rgba(19, 194, 252, 0.411);
+	padding: 5px;
+}
