@@ -40,6 +40,9 @@
                           <a class="nav-link" href="#textf">Text Formatting in HTML</a>
                         </li>
                         <li class="nav-item">
+                          <a class="nav-link" href="#img">Images in HTML</a>
+                        </li>
+                        <li class="nav-item">
                           <a class="nav-link" href="#ex1">Exercise 1: Text Formatting</a>
                         </li>
                       </ul>
@@ -268,7 +271,95 @@ textual content with different effects.
 <p><b>Underline:</b> &lt;u&gt;...&lt;/u&gt;This is 
   <u>underlined text.</u> </p>
 <p>&nbsp;</p>
-  <h2 id="ex1">Exercise 1: Text Formatting</h2> 
+
+<h2 id="img">Images in HTML</h2>
+   <p>The img element and its src attribute are used to embed an image in HTML.</p> 
+<xmp><img src="/images/myimage.jpg" alt="" width="100“ height="150"> 
+<img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png ">
+<img src="images/missing.jpg" alt="Photo info"/>
+<img src="images/missing.jpg" alt="Photo info" height="200px" width="200px"/>
+  </xmp>
+  <h1>Image Sizes</h1>
+    <p>
+        You may use width and height attribute to size image however it is recommended to use photo 
+        editing software to determine the size of images to produce a better result. Resizing
+        images properly will download faster when users view your pages.
+    </p>
+    <h2>
+        Image size can also be specified as a windows percentage. </h2>
+      <xmp> 
+<img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png " alt="Photo info" width="30%"/>
+      </xmp>
+        </p></p>
+  <h2>Alternative Text</h2>
+  <p>The <b>alt </b> attribute
+  is a textual description of the image that is displayed 
+to the user when am image is not found or takes a long time
+to render due to slow internet connection. It is also 
+handy for visually impaired user who is using a screen 
+reader to read the web.</p>
+<xmp>
+<img src="images/img1.jpg" alt="info about image">
+</xmp>
+<h2>Image Titles</h2>
+<p>The <b>title</b> attribute in image provides a tooltip on mouse over.It is 
+however not recommended due to various accessibility problems.
+</p>
+<xmp>
+  <img src="images/img1.jpg" alt="info about image" title="more info">
+  </xmp>
+  <h2>Image Captions in HTML5</h2>
+  <p>You can use &lt;figure&gt; and &lt;figurecatpion&gt; elements.</p>
+  <xmp>
+    <figure>
+      <img src="images/img2.jpg" alt="image 2;">
+    <figcaption>Image caption</figcaption>
+    </figure>
+  </xmp>
+  
+    <h1>Understanding Image URLS & Important Notes</h1>
+    <ul>
+        <li>The src attribute in img tag locates the image file</li>
+        <li>There are two types of URLs: Absolute & Relative</li>
+        <li>Absolute: The exact location of the image that normally begings with http://....</li>
+        <li>Relative: To better organize, images are stored within a specific folder. In such cases, 
+            you can use relative location such as images/image1.jpg </li>
+            <li>Search engines also read image filenames and count them towards SEO.
+               Therefore, it is wise to use a descriptive image  filename; apple.jpg is better than img135.png.</li>
+            <li>Make sure, you own copyrights before
+              displaying an image in your webpage. </li>
+              <li>
+                Images garner attention and draw 
+                emotion therfore use images wisely as people
+                pay more attention to image than text.
+              </li>
+              <li>Try to limit larger size images as much as possible so that they are not slowing down your website.</li>
+    </ul>
+     
+<h1> Example 1: Image and Content</h1>
+<p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. 
+    It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such 
+    as JavaScript.
+    Web browsers receive HTML documents from a web server or from local storage and render the documents
+     into multimedia web pages. 
+    HTML describes the structure of a web page semantically and originally included cues for
+     the appearance of the document. </p>
+    <img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png" >
+    <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of
+         web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards,
+         has encouraged the use of CSS over explicit presentational HTML since 199</p>
+
+<h2>Example 2: Side by Side Images</h2>
+<img src="img/image1.jpg"/>
+<img src="img/image2.jpg"/>
+<img src="img/image3.jpg"/>
+<h2>Example 3: Stacking Images</h2>
+<img src="img/image1.jpg"/> <br>
+<img src="img/image2.jpg"/><br>
+<img src="img/image3.jpg"/><br>
+
+<p>&nbsp;</p><p>&nbsp;</p> 
+  <h2 id="ex1">Exercise 1: Text Formatting and page content</h2> 
   <p>Visit any website of your choice. Make an HTML page that has roughly the same content. You don't need to worry about formats, backgrounds or colors. The main objective is to 
   use elements and tags correctly in HTML. You will include all codes that are explained in the lecture. The formatting for the text could be as below: </p>
   <ul>
