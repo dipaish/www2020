@@ -46,10 +46,29 @@
                           <a class="nav-link" href="#ex1">Exercise 1: Text Formatting</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">Multimedia in Web Pages</a>
+                          <a class="nav-link active" href="#">HTML5 & Github Pages</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">HTML5 & Github Pages</a>
+                          <a class="nav-link" href="#ht5">What is HTML5?</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#ch5">Creating HTML5 Page</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="cheat_sheet.html" target="_blank">HTML5 cheat sheet</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://pages.github.com/" target="_blank">Introduction to Github Pages</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/" target="_blank">Introduction to Github</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#ex2">Exercise 2: HTML5 & GitHub Pages</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Multimedia in Web Pages</a>
+                          <a class="nav-link active" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes4" target="_blank">Check your HTML skills</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link active" href="#">CSS</a>
@@ -73,8 +92,7 @@
     <li><b>Git Clients:</b> Github, Github Desktop </li>
     <li><b>Web Design & Prototyping Tools:</b> Figma, Protooie, Framer</li>
     <li><b>Image Editing:</b> Adobe Photoshop, Gimp</li>
-  </ol>   
-    <p>&nbsp;</p>     
+  </ol>       
   <h2 id="html"> What is HTML?</h2>
   <p>
     Hypertext Markup Language (HTML) is the standard markup language for documents that are designed to be displayed in a web browser. 
@@ -123,7 +141,7 @@ Now lets use the paragph tag by modifying file1.html
        <xmp class="list"> <body></body>:</xmp> <p>This element contains all the content that is displayed to web users such as text, images, videos or games.</p>
       </li>
     </ol>
-    <p>&nbsp;</p><p>&nbsp;</p>
+   
     <h2 id="elements">HTML Elements</h2>
     <p>
       As in the above example, html document consists of a <b>tree</b>
@@ -155,7 +173,7 @@ Now lets use the paragph tag by modifying file1.html
       <em>element 1</em> <em>element 2</em> <em>element 3</em>
     </xmp> 
   </ul>
-  <p>&nbsp;</p><p>&nbsp;</p>
+  
   <h2 id="wh">Whitespaces in HTML </h2>
   <p>The whitespace includes space characters as well as line breaks. You can have lots of whitespaces in your code but the HTML parser
   reduces space(s) or line breaks into a single space when rendering the HTML code. There is no reason to use more white spaces as it
@@ -169,7 +187,7 @@ Now lets use the paragph tag by modifying file1.html
       code. 
     </p>
   </xmp>
-  <p>&nbsp;</p><p>&nbsp;</p>
+  
 <h2 id="spe"> Using Special Characters in HTML</h2>
 <p>
   <b >&lt;, &gt; , &quot; and &amp; </b> are special characters which are parts of HTML syntax, Therfore, when you need to 
@@ -195,7 +213,7 @@ Now lets use the paragph tag by modifying file1.html
     <td>&amp;</td><td><xmp class="list">&amp;</xmp></td>
   </tr>
   </table>
-  <p>&nbsp;</p><p>&nbsp;</p>
+  
 <h2 id="com"> Comments in HTML</h2>
 
 <p>
@@ -208,7 +226,7 @@ Now lets use the paragph tag by modifying file1.html
   <!-- this is a comment
   it can go to multiple lines-->
 </p>
-<p>&nbsp;</p><p>&nbsp;</p>
+
 <! -- start of the new section: text formatting -->
 <h1 id="textf"> Text formatting in HTML</h1>
 <p>
@@ -282,7 +300,7 @@ textual content with different effects.
 <i>italicized text.</i> </p>
 <p><b>Underline:</b> &lt;u&gt;...&lt;/u&gt;This is 
   <u>underlined text.</u> </p>
-<p>&nbsp;</p>
+
 
 <h2 id="img">Images in HTML</h2>
    <p>The img element and its src attribute are used to embed an image in HTML.</p> 
@@ -370,7 +388,7 @@ however not recommended due to various accessibility problems.
 <img src="img/image2.jpg"/><br>
 <img src="img/image3.jpg"/><br>
 
-<p>&nbsp;</p><p>&nbsp;</p> 
+ 
   <h2 id="ex1">Exercise 1: Text Formatting and page content</h2> 
   <p>Visit any website of your choice. Make an HTML page that has roughly the same content. You don't need to worry about formats, backgrounds or colors. The main objective is to 
   use elements and tags correctly in HTML. You will include all codes that are explained in the lecture. The formatting for the text could be as below: </p>
@@ -392,11 +410,96 @@ reading this document:</b> <a href="https://developer.mozilla.org/en-US/docs/Lea
     <li>Apply some text formatting such as bold, italic, underline to some part of your text.</li>
     <li> Add an image to your page</li>
    </ul>
-   
+<h2 id="ht5">What is HTML5?</h2>
+<p>HTML5 is the most enhanced and <b>latest</b> version of HTML that is used for structuring and presenting content on the World WIde Web.
+  It is a mark up language. HTML5 incorporates features such as drag and drop and video playback which earlier were dependent on third party 
+  browser plugins such as Adobe Flash or Microsoft Silverlight </p>
+<h2> New features and browser support </h2>
+HTML5 has a number of new elements and attribute that can be utilized to build 
+modern web pages. The modern browsers such as Mozilla Firefox, Opera, Google Chrome,
+and Safari support HTML5. The built in web browsers available in iPhones, iPads and
+android phones all have support for HTML5. Below is a list of the new HTML5 elements: 
+<ul>
+  <li><b>New Semantic Elements - </b>such as &lt;header&gt; &lt;article&gt; &lt;footer&gt; for better document structure</li>
+    <li><b>New Form Elements - </b> such as &lt;datalist&gt; &lt;keygen&gt; and &lt;output&gt;	
+      </li>
+     <li> <b>New Input Types -</b> such as &lt;color&gt; &lt;email&gt; &lt;url&gt; and attributes such as  
+       &lt;required&gt; &lt;autocomplete&gt; &lt;min and max&gt;
+       </li> 
+         <li> <b>Canvas - </b> HTML5 supports two dimensional drawing surface with the aid of JavaScript. </li>
+          <li> <b>Audio & Video - </b>
+         A video can be easily embedded on web pages without the need of third party plugins.
+         </li>
+          <li><b> Geolocation - </b> It alows uses to share their physical location with web applications. </li>
+         <li> <b>Drag & Drop -  </b> It allows adding drag and drop feature into web pages.</li>
+  </ul>
+   <h3>Read More about HTML5 New Elements at <a href=" https://www.w3schools.com/html/html5_new_elements.asp" target="_blank">Link</a> </h3>
+<h2 id="ch5">Creating your own HTML5 page</h2>
+              <ol>
+                <li> HTML5 code should begin with specifying the <b> DOCTYPE </b>   </li>
+                <li> The character encoding can be specified by using the meta tag </li><br>
+                <b><u>In Visual studio code, you can get the intial part of the html document
+                  by typing "html:5"
+                </u></b>
+                <xmp>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Document</title>
+                </head>
+                <body>
+                  
+                </body>
+                </html>
+              </xmp>
+                <li> Save the file with extension .html for example index.html </li>
+                <li>Web browsers ignore spaces and carraige returns in your html code </li>
+               </ol>
+               
+           <h2 > Naming HTML Files </h2>
+              <ol>
+              <li> Select names that meaningfully describes the file's contents such as
+                contactus.html, about.html. </li>
+                <li> Avoid spaces in your filesnames as browsers replace spaces in your filename
+                  with characters %20 that can confuse users </li>
+              </ol> 
+              <h2 id="ex2">Exercise 2:HTML5 & Github pages</h2> 
+              <p>Please continue working on the same html file that you created when doing
+                Exercise 1. Structure your tasks properly so that your exercies are easy to follow.
+                You can have headings such as Exercise 1 and Exercise 2. Always keep in 
+                mind that your exercises will be viewed by other students as well therfore
+                make things as easy to follow as possible. Please conduct the following tasks:
+                <ul>
+                  <li>Create a Github account if you don't have one. </li>
+                 <li>Install Github Desktop in your PC. Not required if you are familiar with Command Line Interface(CLI) </li>
+                 <li>Create a repository and name it as firstname_lastnamewww21 </li>
+                 <li>Clone the repository to your local workstation. </li>
+                 <li>Add Ecercise1.html file to the local repository and rename it as index.html</li>
+                 <li>Push changes to your repo in GitHub</li>
+                 <li>Enable github pages for the repo that you created and visit your web page using the link.
+                 </li>
 
+                 
+                <li>Use article element in your html page to create an article that has a heading of the article, couple of
+                  paragraphs and an image that is aligned to the right side of the text. </li>
+                  <li>Use an address tag to write the address "Hämeen ammattikorkeakoulu HAMK
 
-
-
+              PL 230 13101 Hämeenlinna" in your html document</li>
+              
+            <li>On the very top of your exericse file, add an  unordered list of links
+               as Home, About Us & Projects. 
+            </li>  
+            <li>The "Home" link should point to the index.html </li> 
+            <li>Create two blank html5 pages as aboutus.html and projects.html</li>
+            <li>The About Us and Projects should link to the files aboutus.html and 
+              project.html respectively.
+            </li>
+            <li><b>Later on you will submit the link to the Github repo and url for your Github page in Moodle</b></li>
+            </ul>
+              
+              </p>
   <h2>References:</h2>
   <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="blank">Mdn Web Docs </a>
   <h2>To learn more:</h2>
