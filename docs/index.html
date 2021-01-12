@@ -67,9 +67,13 @@
                           <a class="nav-link" href="#ex2">Exercise 2: HTML5 & GitHub Pages</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">Multimedia in Web Pages</a>
-                          <a class="nav-link active" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes4" target="_blank">Check your HTML skills</a>
+                          <a class="nav-link" href="#tf">Text Formatting -II</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#mm">Multimedia in Web Pages</a> </li>
+                          <li class="nav-item"><a class="nav-link " href="#deb">Debugging HTML</a></li>
+                          <li class="nav-item"><a class="nav-link active" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes4" target="_blank">Check your HTML skills</a></li>
+                      
                         <li class="nav-item">
                           <a class="nav-link active" href="#">CSS</a>
                         </li>
@@ -500,7 +504,149 @@ android phones all have support for HTML5. Below is a list of the new HTML5 elem
             </ul>
               
               </p>
-  <h2>References:</h2>
+  <h2 id="tf">Some More elements for formatting text</h2>
+  <ol>
+    <li>Description list</li>
+    <li>Quotations:Blockquotes & Inline Quotations  </li>
+    <li>Abbreviations</li>
+    <li>Superscript & Subscript</li>
+  </ol>
+  <h2>Description list</h2>
+  <p>You may use &lt;dl&gt; elemet to create a description list.
+    With the description list, you can mark up set of items
+    and their descriptions such as questions and answers or 
+    terms and definitions.
+  </p>
+    <xmp>
+  <dl>
+    <dt>Description Title</dt>
+    <dd>Here you can have your description text.</dd>
+    <dt>Title 1</dt>
+    <dd>Description text.</dd>
+  </dl></xmp>
+ <h2>Quotations:Blockquotes, Inline Quotations, Citations</h2>
+<p>There are options in HTML to mark up quotations. </p>
+<p>Example of a blockquote...</p>
+
+<xmp>
+<blockquote>Hello World</blockquote>
+</xmp>
+Output: 
+<blockquote>Hello World</blockquote>
+<p>For inline quotations, you can use the &lt;q&gt; element. It is 
+  intended for short quotations which does not require paragraph breaks. </p>
+  <q>One more quotation</q>
+  <xmp>
+<q>One more quotation</q>
+</xmp>
+Output: <br>
+<q>One more quotation</q>
+
+<h2>Abbreviations</h2>
+<p>In-order to wrap around an acronym, you can use the &lt;abbr&gt; 
+  element. </p>
+
+  <p> <abbr title="Hämeen ammattikorkeakoulu">HAMK</abbr> is one of the best UAS in Finland.</p>
+
+<h2>Superscript & Subscript</h2>
+<ol>
+  <li> Superscript: The exam is on 27<sup>th</sup> of Feb.</li>
+  <li> Subscript: The chemical formula of water is H<sub>2</sub>O</li>
+</ol>
+<h2>Computer Code in HTML</h2>
+<p>To mark up computer code in HTML you have 
+  multiple elements in html</p>
+  <xmp>
+    <pre><code>var para = document.querySelector('p');
+
+      para.onclick = function() {
+        alert('Owww, stop poking me!');
+      }</code></pre>
+      
+      <p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+      
+      <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+      
+      <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+      
+      <pre>$ <kbd>ping mozilla.org</kbd>
+      <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+      64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+
+  </xmp>
+  <pre><code>var para = document.querySelector('p');
+
+    para.onclick = function() {
+      alert('Owww, stop poking me!');
+    }</code></pre>
+    
+    <p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+    
+    <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+    
+    <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+    
+    <pre>$ <kbd>ping mozilla.org</kbd>
+    <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+    64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+  
+<h2 id="mm">Mulitmedia in Web pages</h2>
+<h3>The <code>&lt;video&gt;</code> element allows you to embed a video.  
+</h3>
+<xmp>
+  <video src=""images/test.mp4" controls width="400" height="250">
+    <p>Your browser doesn't support HTML5 video.
+       Here is a <a href="images/test.mp4">link to the video</a></p>
+  </video>
+
+</xmp>
+<video src="images/test.mp4" controls width="400" height="250">
+  <p>Your browser doesn't support HTML5 video.
+     Here is a <a href="images/test.mp4">link to the video</a></p>
+</video>
+<p>The other options you can use are <code>autoplay, loop, muted, preload="auto"</code></p>
+<h3>Example</h3>
+<xmp>
+<video src="images/test.mp4" controls width="400" height="250" autoplay loop muted>
+  <p>Your browser doesn't support HTML5 video.
+     Here is a <a href="images/test.mp4">link to the video</a></p>
+</video>    
+</xmp>
+
+<h3>The &lt;audio&gt; element allows to add audio to your webpage.</h3>
+<xmp>
+  <audio controls>
+    <source src="images/file.mp3" type="audio/mp3">
+    <p>Your browser doesn't support HTML5 audio. </p>
+  </audio>
+</xmp>
+<audio controls>
+  <source src="images/file.mp3" type="audio/mp3">
+  <p>Your browser doesn't support HTML5 audio. </p>
+</audio>
+<p>&nbsp;</p>
+<h2 id="deb">Debugging HTML</h2>
+<p>It is very likely that you commit errors when coding.
+  Some of your code won't work at all or works a bit 
+  differently than what you have expected. HTML is not 
+  as complicated as other programming languages like Python or Php.The 
+  way browsers parse html document is more <q>permissive</q> than 
+  other languages. For instance, missing a semicolon in some 
+  programming language will mess up thing whereas in html, even if 
+  you write the elements incorrectly its going to product certain output.
+<blockquote>When something is wrong in code, there are
+  mainly two types of errors <b>Syntax errors</b> & <b>Logic Errors</b>
+  . <b>Syntax error</b> may cause the program not to run and can be easily 
+  fixed by as long as you are familiar with the language's syntax and know what the error messages mean.</blockquote><br>
+  <b>Logic Errors is when the sytax is correct but the 
+    program is not running as intended. It is difficult to fix
+    this kind of errors.
+  </b>
+</blockquote>
+<blockquote>Note: HTML is parsed permissively because when the web was first created, it was decided that allowing people to get their content published was more important than making sure the syntax was absolutely correct. The web would probably not be as popular as it is today, if it had been more strict from the very beginning.</blockquote> 
+</p>
+
+<h2>References:</h2>
   <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="blank">Mdn Web Docs </a>
   <h2>To learn more:</h2>
  <a href="https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn" target="blank"> https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn </a><br>
