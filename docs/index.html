@@ -80,7 +80,7 @@
                           <li class="nav-item"><a class="nav-link active" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes4" target="_blank">Check your HTML skills</a></li>
                       
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">CSS</a>
+                          <a class="nav-link active" href="#cs">CSS</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link active" href="#">HTML Layouts</a>
@@ -650,6 +650,75 @@ Output: <br>
 </blockquote>
 <blockquote>Note: HTML is parsed permissively because when the web was first created, it was decided that allowing people to get their content published was more important than making sure the syntax was absolutely correct. The web would probably not be as popular as it is today, if it had been more strict from the very beginning.</blockquote> 
 </p>
+<h2 id="cs">What is CSS?</h2>
+<p><b>CSS (Cascading Style Sheets)</b> is a style sheet 
+  language for creating great-looking web pages. It
+  describes the presentation of elements in a document. 
+  You define a group of styles that are applied to partical elements
+    on your web page. For example, you want the main heading to be shown 
+    as large red text.
+  </p>
+  <h2>Inline css</h2>
+  <p>It is often used to apply a style for a single html element.</p>
+  <p>To add inline css, you can simply add the style to the corresponding
+      element. 
+  </p>
+  <h3>Example</h3>
+  <xmp><h1 style="color:brown;text-align:left;">This is my heading</h1> </xmp>
+  <xmp><p style="color:red;">This is a paragraph.</p></xmp>
+  <h2>Embedded css</h2>
+  <p>
+      The embedded css or the internal css is written inside
+      the &lt;style&gt; element in the &lt;head&gt; section of your HTML 
+      document. 
+  </p>
+  <h3>Example of embedded css</h3>
+  <xmp>
+      <!DOCTYPE html>
+      <html>
+      <head>
+      <style>
+      body {
+        background-color:red;
+      }
+      h1 {
+        color: blue;
+      }
+      </style>
+      </head>
+      <body>
+      <h1>This is a heading</h1>
+      <p>This is a paragraph.</p>
+      </body>
+      </html>
+  </xmp>
+  <h2>External css</h2>
+  <p>The best way of adding a CSS to your html document
+      is by creating a css file with an extension <b>.css.
+  </b>
+  </p>
+  
+  
+  
+  <h2>Linking the css </h2>
+  <p >To link style.css to index.html add one of the following line somewhere inside the &lt;head&gt; of the HTML document<br>
+      <code>
+          &lt;link rel="stylesheet" href="style.css"&gt; <br>
+          &lt;link href="css/style.css" rel="stylesheet" type="text/css"&gt;<br>
+          &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"&gt;
+      </code>
+  
+  <h2>CSS: Selectors</h2>
+  <img src="images/cssselector.png" width="700px">
+  <ul>
+    <li>CSS selector defines what elements should the CSS property be applied</li>
+    <li>The first part of the CSS rule is a css selector</li>
+  </ul>
+  <h2>CSS Example</h2>
+  <a href="https://raw.githubusercontent.com/dipaish/www2020/master/docs/css/learncss.css" target="blank"><h3>Link to the css file</h3></a>
+
+
+
 
 <h2>References:</h2>
   <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="blank">Mdn Web Docs </a>
