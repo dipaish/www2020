@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <html>
   <head>
     <title>Introduction to Web Development - HTML, CSS & Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
   <body>
-    <div id="wrap">   
+  <div id="wrap">   
       
-<div id="content">
-<div id="mainpage">
+  <div id="content">
+  <div id="mainpage">
    <!--[if IE]>
               <p class="note">This page works perfectly fine with mobile devices and all major 
                 browsers such as Firefox or Google Chrome. Please use at your own risk with Internet Explorer.</p>
               <![endif]-->
               <div class="container" style="margin-top:5px">
                 
-                  <div class="row">
-                    <div class="col-sm-3">
+                <div class="row">
+                <div class="col-3">
                       <h3>Table of Content</h3>
                       <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
@@ -94,17 +98,28 @@
                           <li class="nav-item">
                             <a class="nav-link" href="#ex3" target="_blank">Exercise 3 - CSS</a>
                           </li>
-                          <li class="nav-item"><a class="nav-link active" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes4" target="_blank">Check your HTML skills</a></li>
-                      <br>
-                        
+                          
+                
+            
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">HTML Layouts</a>
+                          <a class="nav-link active" href="#la">HTML Layouts</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flex Guide</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Grid Guide (optional)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#ex44">Exercise 4 - HTML Layout</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes4" target="_blank">
+                          Check your HTML skills</a></li>
                       </ul>
                     </div>
-                    <div class="col-sm-9">
+                    
   
-                <div class="col-sm-12">   
+                <div class="col-9">   
                   <h2>Tools for web development</h2>
 <p>You need atleast some of the following tools to get started with web development. Depending on your development activity (frontend, backed or full stack), you will need 
   some of the following tools. You will need at the minumm code or text editor and a browser.</p>
@@ -329,7 +344,7 @@ textual content with different effects.
 <h2 id="img">Images in HTML</h2>
    <p>The img element and its src attribute are used to embed an image in HTML.</p> 
 <xmp><img src="/images/myimage.jpg" alt="" width="100“ height="150"> 
-<img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png ">
+<img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png " width="680px">
 <img src="images/missing.jpg" alt="Photo info"/>
 <img src="images/missing.jpg" alt="Photo info" height="200px" width="200px"/>
   </xmp>
@@ -398,7 +413,7 @@ however not recommended due to various accessibility problems.
      into multimedia web pages. 
     HTML describes the structure of a web page semantically and originally included cues for
      the appearance of the document. </p>
-    <img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png" >
+    <img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png" width="90%" >
     <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of
          web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards,
          has encouraged the use of CSS over explicit presentational HTML since 199</p>
@@ -724,7 +739,7 @@ Output: <br>
       </code>
   
   <h2>CSS: Selectors</h2>
-  <img src="images/cssselector.png" width="700px">
+  <img src="images/cssselector.png" width="680px">
   <ul>
     <li>CSS selector defines what elements should the CSS property be applied</li>
     <li>The first part of the CSS rule is a css selector</li>
@@ -779,23 +794,90 @@ Output: <br>
 
 <blockquote><b>Congratulations !</b> You have successfully completed the first part of the individual tasks.</blockquote>
 
+<h2 id="la">Buidling a layout for HTML pages</h2>
+<p>We can usee <b>CSS</b> to create page layouts and control the position of our html 
+    elemets. There are several layout techniques however we will go through
+some of them</p>
+<h2>Normal Flow</h2>
+<p>You don't do anything for the layout, the normal flow will take the html 
+    elements as you have written them in your html code. The elements will be displayed
+    in the <b>same order</b> as it appears in the <b>source code</b>. The elements that appear
+    one after another are <b>block elements</b> and the ones that appear in the same
+    line are <b>inline elements</b>. <br>
+</p>
+<strong>Example of Normal Flow layout:</strong> <br><br>
+<img src="images/nlayout.PNG" width="680px">
+<h2>Flexbox</h2>
+<p>The flexbox make things easier to put html elemets either in a row or a column. Flexbox is one dimensional
+    that is we can deal with the layout in one dimensiona at a time. We can use flexbox to create flexible and 
+    responsive layout. 
+</p>
+<p>To use flex box, we should first define a flex container. 
+    Use <code>display:flex </code> to the parent html element. All child elements
+with then become flex items.</p>
+<xmp>
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: red;
+        align-content: space-between;
+      }
+</xmp>
+<p class="note">
+   Unfortunately, Flexbox is not supported in Internet Explorer 10 or earlier versions.
+</p>
+<strong>Example of a flexbox layout:</strong>
+<a href="flexbox.html">Link to the Example file</a>
+<h2>Floats</h2>
+<p>The float property was introduced to allow web developers to 
+    implement simple layouts involving an image floating inside 
+    a column of text, with the text wrapping around the left or right of it.
+     The kind of thing you might get in a newspaper layout.
+    Floats  are commonly used to 
+    create entier website layouts.
+</p>
+<strong>Example of a flexbox layout:</strong>
+<a href="floatexample.html">Link to the Example file</a>
+
+<h2>CSS Grid</h2>
+<p>
+    A CSS grid is defined using the grid value of the display property; you can define columns and rows
+     on your grid using the grid-template-rows and grid-template-columns properties.
+</p>
+    Some resources for learning CSS grid: 
+    <ol><li> https://developer.mozilla.org/en-US/docs/Glossary/Grid</li>
+        <li>https://css-tricks.com/snippets/css/complete-guide-grid </li>
+    </ol>
+
+        <h2 id="ex44">Exercise 4: HTML layout</h2>
+
+        <ul>
+          <li>Create a new html page and name it as exercise4.html</li>
+        <li>Write css to create a template as in the image. Use semantic elements
+          such as header, navbar, article, footer in your css.
+        </li>
+        <li>Use random text and images to look like a proper website.</li>
+        <li>Implement flexbox in your page</li>
+        </ul>
+        <strong>Image for the layout</strong><br><br>
+        <img src="images/layouttask.PNG" width="680px">
 <h2>References:</h2>
   <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="blank">Mdn Web Docs </a>
   <h2>To learn more:</h2>
  <a href="https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn" target="blank"> https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn </a><br>
  <a href="https://www.w3schools.com/html/default.asp" target="blank">https://www.w3schools.com/html/default.asp</a>
 
+</div>
+</div>
  <div id="footer" >
   <p style="text-align:center">Deepak KC, <script>document.write( new Date().getFullYear() );</script>  &nbsp; &nbsp;&nbsp;<img src="https://licensebuttons.net/l/by-sa/3.0/88x31.png" >
     &nbsp;&nbsp;&nbsp;<a class="external" href="http://creativecommons.org/licenses/by-sa/2.5/" rel="noopener" target="blank">CC-BY-SA 2.5</a>
   </p>
     </div>
- </div>
-  </div>
+ 
   </div>
   </div>
   
-    </div>
-    </div>
+</div>
   </body>
 </html>

@@ -27,9 +27,21 @@ some of them</p>
 <strong>Example of Normal Flow layout:</strong> <br><br>
 <img src="images/nlayout.PNG">
 <h2>Flexbox</h2>
-<p>The flexbox make things easier to put html elemets either in a row or a column. </p>
-<p>To use flex box, you use <b>display:flex </b> to the parent html element. All child elements
-with then become flext items.</p>
+<p>The flexbox make things easier to put html elemets either in a row or a column. Flexbox is one dimensional
+    that is we can deal with the layout in one dimensiona at a time. We can use flexbox to create flexible and 
+    responsive layout. 
+</p>
+<p>To use flex box, we should first define a flex container. 
+    Use <code>display:flex </code> to the parent html element. All child elements
+with then become flex items.</p>
+<xmp>
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: red;
+        align-content: space-between;
+      }
+</xmp>
 <p class="note">
    Unfortunately, Flexbox is not supported in Internet Explorer 10 or earlier versions.
 </p>
@@ -45,7 +57,17 @@ with then become flext items.</p>
 </p>
 <strong>Example of a flexbox layout:</strong>
 <a href="floatexample.html">Link to the Example file</a>
-            </div>
+
+<h>CSS Grid</h>
+<p>
+    A CSS grid is defined using the grid value of the display property; you can define columns and rows
+     on your grid using the grid-template-rows and grid-template-columns properties.
+</p>
+    Some resources for learning CSS grid: 
+    <ol><li>>https://developer.mozilla.org/en-US/docs/Glossary/Grid</li>
+        <li>https://css-tricks.com/snippets/css/complete-guide-grid/</li>
+        </ol
+</div>
         </div>
     <div id="footer">
         <p>Deepak KC <br><br><img src="https://licensebuttons.net/l/by-sa/3.0/88x31.png" >

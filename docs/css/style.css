@@ -5,7 +5,7 @@ body{
 	width:100%;
 	margin:0px auto 15px auto;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:14px;
+	font-size:16px;
 	color:#666666;
 }
 
@@ -17,7 +17,7 @@ body{
 	width:100%;
 	float:left;
 	padding:5px 5px 5px 0px;
-	height:auto
+	height:auto;
 }
 #mainpage p {
 	line-height:22px;

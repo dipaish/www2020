@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout - Example</title>
+    <style>
+        .wrapper {
+            margin: auto;
+            width:70%;
+            
+        }
+        .topmenu{
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            margin:0; 
+            background-color: skyblue;
+        }
+        .topmenu >li{
+            list-style: none;
+            padding: 1em;
+            color: snow;
+        }
+        .flexgrowcon {
+            display:flex;
+            align-items: stretch;
+            
+        }
+        leftbar,rightbar {
+            background-color: snow;
+            min-height: 500px;
+        }
+        footer {
+            background-color: black;
+            color:white;
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <ul class="topmenu">
+        <li>Link 1</li>
+        <li>Link 1</li>
+        <li>Link 1</li>
+        <li>Link 1</li>
+        <li>Link 1</li>
+    </ul>
+</header>
+<div class="flexgrowcon">
+<leftbar style="flex-grow: 1;">
+    SOme text
+</leftbar>
+<content style="flex-grow: 6;">
+    asdsadas
+</content>
+<rightbar style="flex-grow: 1;">
+    asdasda
+</rightbar>
+    </div>
+<footer>
+    Hello World
+</footer>
+</div>
+
+</body>
+</html>
