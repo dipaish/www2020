@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Introduction to Web Development - HTML, CSS & Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+  <div id="wrap">   
+      
+  <div id="content">
+  <div id="mainpage">
+   <!--[if IE]>
+              <p class="note">This page works perfectly fine with mobile devices and all major 
+                browsers such as Firefox or Google Chrome. Please use at your own risk with Internet Explorer.</p>
+              <![endif]-->
+              <div class="container" style="margin-top:5px">
+                
+                <div class="row">
+                <div class="col-3">
+                      <h3>Table of Content</h3>
+                      <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#html">What is HTML?</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#elements">HTML Elements</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#wh">White Spaces in HTML</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#spe">Special Characters in HTML</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#com">HTML Comments</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#textf">Text Formatting in HTML</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#img">Images in HTML</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#ex1">Exercise 1: Text Formatting</a>
+                        </li>
+                
+                      </ul>
+                    </div>
+                    
+  
+                <div class="col-9">   
+                  <h2>Tools for web development</h2>
+<p>You need atleast some of the following tools to get started with web development. Depending on your development activity (frontend, backed or full stack), you will need 
+  some of the following tools. You will need at the minumm code or text editor and a browser.</p>
+  <ol>
+    <li><b>Code or Text editors:</b> Sublime Text, Notepad++, <a href="https://code.visualstudio.com/" target="_blank"><b>Visual Studio Code</b></a></li>
+    <li><b>Front-End Frameworks:</b> Bootstrap, Semantic-UI, Material UI</li>
+    <li><b>Web Application Frameworks:</b> Django, Angular, ReactJS</li>
+    <li><b>Package Managers:</b> NPM, Yarn, Material UI</li>
+    <li><b>Git Clients:</b> Github, Github Desktop </li>
+    <li><b>Web Design & Prototyping Tools:</b> Figma, Protooie, Framer</li>
+    <li><b>Image Editing:</b> Adobe Photoshop, Gimp</li>
+  </ol> 
+  <img src="css/devenvironment.png">
+  <h2 id="html"> What is HTML?</h2>
+  <p>
+    Hypertext Markup Language (HTML) is the standard markup language for documents that are designed to be displayed in a web browser. 
+HTML is not a programming language. It is a markup language
+that tells browser how to structure a web page. HTML is made up of sereis of elements such as a piece of text, a pragraph,
+, list, table, links or forms.
+<h2>Lets write the following line of text in a text file and save it as file1.html</h2>
+<xmp>I am learning to develop web pages</xmp>
+Now lets use the paragph tag by modifying file1.html
+<xmp><p>I am learning to develop web pages.</p></xmp>  
+</p>
+<p class="note">
+ Note: Tags in HTML are case-insensitive. 
+   This means they can be written in uppercase or lowercase.
+    However, it is strongly recommended to write all tags in lowercase for consistency, readability, and other reasons.
+
+</p>
+  <h2>A simple HTML document looks like this</h2>
+  
+  <xmp>
+    <!DOCTYPE html>
+    <html lang="en">
+     <head>
+      <title>My page</title>
+     </head>
+     <body>
+      <h1>My page</h1>
+      <p>This is a <a href="link">simple</a> Link</p>
+      <!-- this is a comment -->
+     </body>
+    </html>
+    </xmp>
+    <ol>
+      <li><xmp class="list"> <!DOCTYPE html>:</xmp>
+        <p>
+          It is simply meant to act as links to a set of rules tht the HTML page had to follow.
+           In current time, rarerly anyone cares about it however it is recommended to start with the DOCTYPE.
+        </p></li>
+      <li><xmp class="list"><html></html>:</xmp> <p>This element simply wraps all the content on the entire page, and is sometimes known as the root element.</p></li>
+      <li><xmp class="list"><head></head>: </xmp><p> This element acts as a container for all the stuff (keywords, page description,css, character set declarations and more) 
+        you want to include on the HTML page, that isn't the content you are showing to your page's viewers.</p>
+      </li>
+    <li><xmp class="list"><title></title>:</xmp> <p>his element defines the title of your page, that appears 
+      in the browser tab and is used to describe the page when you bookmark/favorite it.</p></li>
+      <li>
+       <xmp class="list"> <body></body>:</xmp> <p>This element contains all the content that is displayed to web users such as text, images, videos or games.</p>
+      </li>
+    </ol>
+   
+    <h2 id="elements">HTML Elements</h2>
+    <p>
+      As in the above example, html document consists of a <b>tree</b>
+      of elements and text. Each element starts with a <b>tag </b>
+      and ends with a tag. Tags have to be <b> nested </b>such that 
+      they are completely within each other without <b>overlapping </b>. 
+  </p>
+<xmp><p>This <em>is <strong>correct</strong>.</em></p>
+<p>This is <em>very <strong>wrong</em>!</strong></p>
+</xmp>
+  <p class="note">
+    Note: Tags in HTML are case-insensitive, i.e. they can be written in uppercase or lowercase. 
+    Best practice, however, is to write all tags in lowercase for consistency, readability, and other reasons.
+  </p>
+
+  There are two important categories of elements in HTML. 
+  <ul>
+    <li><b>Block Level Elements:</b></li>
+    Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.
+    <br>Example: 
+    <xmp>
+      <p>paragraph 1</p><p>paragraph 2</p><p>paragraph 3</p><p>paragraph 4</p>
+    </xmp>
+    <li> <b>Inline Elements:</b></li>
+    These elements are contained within the block level elements that is it does not cause a new line to appear in the document. 
+    <br>Example:
+    <xmp>
+      
+      <em>element 1</em> <em>element 2</em> <em>element 3</em>
+    </xmp> 
+  </ul>
+  
+  <h2 id="wh">Whitespaces in HTML </h2>
+  <p>The whitespace includes space characters as well as line breaks. You can have lots of whitespaces in your code but the HTML parser
+  reduces space(s) or line breaks into a single space when rendering the HTML code. There is no reason to use more white spaces as it
+  might affect the readability if it is not nicely formatted. </p>
+  <xmp>
+    <p> this is properly formatted in terms of whitespaces</p>
+    <p>this is 
+      very                    random and is not effective enough when 
+      reading 
+      the 
+      code. 
+    </p>
+  </xmp>
+  
+<h2 id="spe"> Using Special Characters in HTML</h2>
+<p>
+  <b >&lt;, &gt; , &quot; and &amp; </b> are special characters which are parts of HTML syntax, Therfore, when you need to 
+  use them in your html code you need to use the character equivalent as in the table below, to not have it interpreted as code. 
+</p>
+<table >
+  <tr>
+    <td>HTML Character</td><td>Equivalent Character Reference</td>
+  </tr>
+  <tr>
+    <td>&lt;</td><td><xmp class="list">&lt;</xmp></td>
+  </tr>
+  <tr>
+    <td>&gt;</td><td><xmp class="list">&gt;</xmp></td>
+  </tr>
+  <tr>
+    <td>&quot;</td><td><xmp class="list">&quot;</xmp></td>
+  </tr>
+  <tr>
+    <td>&apos;</td><td><xmp class="list">&apos;</xmp></td>
+  </tr>
+  <tr>
+    <td>&amp;</td><td><xmp class="list">&amp;</xmp></td>
+  </tr>
+  </table>
+  
+<h2 id="com"> Comments in HTML</h2>
+
+<p>
+  It is a good idea to write comments whereever applicable. Comments are ignored by the browser and are invisible to the user. <br>
+ <b> To type comment in HTML: </b>
+  &lt;!-- comment 
+  asdsad
+  asdasda
+  --&gt;
+  <!-- this is a comment
+  it can go to multiple lines-->
+</p>
+
+<! -- start of the new section: text formatting -->
+<h1 id="textf"> Text formatting in HTML</h1>
+<p>
+  HTML is used to structure text within a page
+  by adding headings, paragraphs, emphasizing words
+  and more. 
+</p>
+<p>The structured content provides
+  a better and enjoyable reading experience.
+</p>
+<p>Headings are to be wrapped in a heading element <b>&lt;h1&gt;</b>. 
+There are 6 level of heading elements <b>&lt;h1&gt;, &lt;h2&gt;,
+  &lt;h3&gt;, &lt;h4&gt;,&lt;h5&gt; &amp; &lt;h6&gt;.
+</b> </p>
+<p>Paragraphs are wrapped in a <b>&lt;p&gt;</b></p>
+<xmp>
+<h1>My heading</h1>
+<p>This is a paragraph.</p>
+</xmp>
+<h2>Example of a structure</h2>
+<img src="images/structure1.PNG" height="300px">
+<h2>Lists: Unordered</h2>
+<xmp>
+<ul>
+<li>Deepak</li>
+<li>Markku</li>
+<li>Pekka</li>
+<li>Juha</li>
+</ul>
+</xmp>    
+<h2>Lists: Ordered</h2>
+
+<xmp>
+<ol>
+<li>Deepak</li>
+<li>Markku</li>
+<li>Pekka</li>
+<li>Juha</li>
+</ol>
+</xmp>    
+
+
+<h2>Lists: Nested</h2>
+<xmp>
+<ol>
+<li>Chapter 1</li>
+<li>Chapter 2</li>
+<li>Chapter 3</li>
+<li>Chapter 4
+<ul>
+<li>Chapter 4.1</li>
+<li>Chapter 4.2</li>
+</ul>
+</li>
+</ol>
+</xmp>
+
+<h2> Importance</h2>
+<p>It is sometimes needed to emphasize certain words
+within your text. HTML provides several 
+semantic elements to mark up 
+textual content with different effects. 
+</p>
+<p><b>Emphasis:</b> &lt;em&gt;...&lt;/em&gt;This is 
+<em>emphasized text.</em> </p>
+<p><b>Bold:</b> &lt;b&gt;...&lt;/b&gt;This is 
+<b>bold text.</b> </p>
+<p><b>Strong:</b> &lt;strong&gt;...&lt;/strong&gt;This is 
+<strong>strong text.</strong> </p>
+<p><b>Italic:</b> &lt;i&gt;...&lt;/i&gt;This is 
+<i>italicized text.</i> </p>
+<p><b>Underline:</b> &lt;u&gt;...&lt;/u&gt;This is 
+  <u>underlined text.</u> </p>
+
+
+<h2 id="img">Images in HTML</h2>
+   <p>The img element and its src attribute are used to embed an image in HTML.</p> 
+<xmp><img src="/images/myimage.jpg" alt="" width="100“ height="150"> 
+<img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png " width="680px">
+<img src="images/missing.jpg" alt="Photo info"/>
+<img src="images/missing.jpg" alt="Photo info" height="200px" width="200px"/>
+  </xmp>
+  <h1>Image Sizes</h1>
+    <p>
+        You may use width and height attribute to size image however it is recommended to use photo 
+        editing software to determine the size of images to produce a better result. Resizing
+        images properly will download faster when users view your pages.
+    </p>
+    <h2>
+        Image size can also be specified as a windows percentage. </h2>
+      <xmp> 
+<img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png " alt="Photo info" width="30%"/>
+      </xmp>
+        </p></p>
+  <h2>Alternative Text</h2>
+  <p>The <b>alt </b> attribute
+  is a textual description of the image that is displayed 
+to the user when am image is not found or takes a long time
+to render due to slow internet connection. It is also 
+handy for visually impaired user who is using a screen 
+reader to read the web.</p>
+<xmp>
+<img src="images/img1.jpg" alt="info about image">
+</xmp>
+<h2>Image Titles</h2>
+<p>The <b>title</b> attribute in image provides a tooltip on mouse over.It is 
+however not recommended due to various accessibility problems.
+</p>
+<xmp>
+  <img src="images/img1.jpg" alt="info about image" title="more info">
+  </xmp>
+  <h2>Image Captions in HTML5</h2>
+  <p>You can use &lt;figure&gt; and &lt;figurecatpion&gt; elements.</p>
+  <xmp>
+    <figure>
+      <img src="images/img2.jpg" alt="image 2;">
+    <figcaption>Image caption</figcaption>
+    </figure>
+  </xmp>
+  
+    <h1>Understanding Image URLS & Important Notes</h1>
+    <ul>
+        <li>The src attribute in img tag locates the image file</li>
+        <li>There are two types of URLs: Absolute & Relative</li>
+        <li>Absolute: The exact location of the image that normally begings with http://....</li>
+        <li>Relative: To better organize, images are stored within a specific folder. In such cases, 
+            you can use relative location such as images/image1.jpg </li>
+            <li>Search engines also read image filenames and count them towards SEO.
+               Therefore, it is wise to use a descriptive image  filename; apple.jpg is better than img135.png.</li>
+            <li>Make sure, you own copyrights before
+              displaying an image in your webpage. </li>
+              <li>
+                Images garner attention and draw 
+                emotion therfore use images wisely as people
+                pay more attention to image than text.
+              </li>
+              <li>Try to limit larger size images as much as possible so that they are not slowing down your website.</li>
+    </ul>
+     
+<h1> Example 1: Image and Content</h1>
+<p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. 
+    It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such 
+    as JavaScript.
+    Web browsers receive HTML documents from a web server or from local storage and render the documents
+     into multimedia web pages. 
+    HTML describes the structure of a web page semantically and originally included cues for
+     the appearance of the document. </p>
+    <img src="https://raw.githubusercontent.com/dipaish/www2020/master/docs/images/header.png" width="90%" >
+    <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of
+         web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards,
+         has encouraged the use of CSS over explicit presentational HTML since 199</p>
+
+<h2>Example 2: Side by Side Images</h2>
+<img src="images/img1.png"/>
+<img src="images/img2.png"/>
+<img src="images/img3.png"/>
+<h2>Example 3: Stacking Images</h2>
+<img src="images/img1.png"/> <br>
+<img src="images/img2.png"/><br>
+<img src="images/img3.png"/><br>
+
+<h2 id="ex1">Exercise 1: Text Formatting and page content</h2> 
+  <p>Visit any website of your choice. Make an HTML page that has roughly the same content. You don't need to worry about formats, backgrounds or colors. The main objective is to 
+  use elements and tags correctly in HTML. You will include all codes that are explained in the lecture. The formatting for the text could be as below: </p>
+  <ul>
+    <li>Start yout html code with doctype, head and a proper title. </li>
+    <li> The HTML head is the contents of the <xmp><head>....</head></xmp> element. 
+      The content of the head element is not displayed to the user. It contains metadata
+    about the document such as the author information, the title of the page, 
+  the metadata element such as the document's character encoding, custom icon to your page,
+link to the CSS and JavaScript file that are applied to the pages, primary language of the document,
+<b>Your task is to include a proper title, the author information,set the character set as utf-8 and a brief 
+description that is used on a search engine result pages.For this task, please consider
+reading this document:</b> <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank">Link</a>
+
+</li>
+    <li>The top level heading of the page can be heading 1</li>
+    <li> Put some random text pieces in the the &lt;p&gt; tag</li>
+    <li>Add a couple of random link to some external pages.</li>
+    <li>Apply some text formatting such as bold, italic, underline to some part of your text.</li>
+    <li> Add an image to your page</li>
+   </ul>
+
+<h2>References:</h2>
+  <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="blank">Mdn Web Docs </a>
+  <h2>To learn more:</h2>
+ <a href="https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn" target="blank"> https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn </a><br>
+ <a href="https://www.w3schools.com/html/default.asp" target="blank">https://www.w3schools.com/html/default.asp</a>
+
+</div>
+</div>
+ <div id="footer" >
+  <p style="text-align:center">Deepak KC, <script>document.write( new Date().getFullYear() );</script>  &nbsp; &nbsp;&nbsp;<img src="https://licensebuttons.net/l/by-sa/3.0/88x31.png" >
+    &nbsp;&nbsp;&nbsp;<a class="external" href="http://creativecommons.org/licenses/by-sa/2.5/" rel="noopener" target="blank">CC-BY-SA 2.5</a>
+  </p>
+    </div>
+ 
+  </div>
+  </div>
+  
+</div>
+  </body>
+</html>
