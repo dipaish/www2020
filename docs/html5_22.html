@@ -7,8 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
   <body>
   <div id="wrap">   
@@ -28,9 +26,21 @@
                         <li class="nav-item">
                           <a class="nav-link active" href="#html5">What is HTML5?</a>
                         </li>
-                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="#semantic">Semantic Elemets in HTML</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#boiler">HTML 5 boilerplate</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vTM7S8QD82OG5DdGwec-0Y_XFyI9wsn-bRyRcgQBLmgNrJfXNdW7oYCS_b8kxD4tw/pub" target="_blank" >Exercise 2</a>
+                        </li>
                        
-                
+                         
+
                       </ul>
                     </div>
                     
@@ -42,6 +52,7 @@
 <p>HTML5 is the most enhanced and <b>latest</b> version of HTML that is used for structuring and presenting content on the World WIde Web.
     It is a mark up language. HTML5 incorporates features such as drag and drop and video playback which earlier were dependent on third party 
     browser plugins such as Adobe Flash or Microsoft Silverlight </p>
+    <p>&nbsp;</p>
   <h2> New features and browser support </h2>
   HTML5 has a number of new elements and attribute that can be utilized to build 
   modern web pages. The modern browsers such as Mozilla Firefox, Opera, Google Chrome,
@@ -61,19 +72,164 @@
             <li><b> Geolocation - </b> It alows uses to share their physical location with web applications. </li>
            <li> <b>Drag & Drop -  </b> It allows adding drag and drop feature into web pages.</li>
     </ul>
-    <h2> Semantic Elemets in HTML </h2>
+    <p>&nbsp;</p>
+    <h2 id="semantic"> Semantic Elemets in HTML </h2>
     <p>
-        Semantics refers to the meaning of a piece of code — for example "what effect does running that line of JavaScript have?",
-         or "what purpose or role does that HTML element have"
-          (rather than "what does it look like?".)
-          Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way.
+      Semantics describes the meaning of a piece of code in a human and machine-readable way. By just looking into the code you can easily know the purpose and role of the HTML element.  
+       <br><br>
+      Elements such as <b> &lt;header&gt;, &lt;footer&gt; and &lt;article&gt;</b>
+        are semantic because they accurately describe the purpose of the element 
+        and also the content of the element. 
+        Semantic elements enhance the readability 
+        and accessibility of the HTML code whereas 
+        <b>non semantic elemenets such as &lt;div&gt; &lt;span&gt;</b> doest not any thing about the content
 
-Elements such as <header>, <footer> and <article> are all considered semantic because they accurately describe the purpose of the element and the type of content that is inside them.
     </p>
-
-    <h2> List of new Semantic Elemets  </h2>
-    <h2> HTML Code Exam with and without Semantic Elements</h2>
+<p>&nbsp;</p>
+    <h2 > List of Semantic Elemets  in HTML5 </h2>
+    <table >
+      <tbody><tr><th><b>HTML Tag</b></th><th><b>Meaning of the tag</b></th></tr>
+      <tr><td>&lt;article&gt;</td><td>An article</td></tr>
+      <tr><td>&lt;aside&gt;</td><td>Content aside from the page content</td></tr>
+      <tr><td>&lt;details&gt;</td><td>Additional details that can be viewed or hidden by user</td></tr>
+      <tr><td>&lt;figcaption&gt;</td><td> A caption for a &lt;figure&gt; element</td></tr>
+      <tr><td>&lt;figure&gt;</td><td>Content such as illustrations, diagrams...</td></tr>
+      <tr><td>&lt;footer&gt;</td><td> A footer for a document or section</td></tr>
+      <tr><td>&lt;header&gt;</td><td>A header for a document or section</td></tr>
+      <tr><td>&lt;main&gt;</td><td>The main content of a document</td></tr>
+      <tr><td>&lt;mark&gt;</td><td> Marked/highlighted text</td></tr>
+      <tr><td>&lt;nav&gt;</td><td>Navigation links</td></tr>
+      <tr><td>&lt;section&gt;</td><td>A section in a document</td></tr>
+      <tr><td>&lt;summary&gt;</td><td>A visible heading for a &lt;details&gt; element</td></tr>
+      <tr><td>&lt;time&gt;</td><td> Date/time</td></tr>
+      </tbody></table>
+      <p></p>
+      <h3>HTML elements reference <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Link</a> </h3>
+      <p>&nbsp;</p>
+    <h2> HTML Code Example with and without Semantic Elements</h2>
+    <table >
+      <tbody><tr><th><b>HTML5</b></th><th><b>HTML </b></th></tr>
+        <tr><td>
+          <xmp>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+               <header>
+                    <nav>
+                         <ul> 
+                             <li class="nav-links"> <a href="">Home</a> </li> 
+                             <li class="nav-links"> <a href="">About Us</a> </li> 
+                            </ul> 
+                        </nav> 
+                    </header> 
+                    <main> 
+                        <h1>Here is a heading</h1> 
+                        <section> <p>hello world</p> </section> 
+                    </main> 
+                    <footer> 
+                        <p>This is the footer</p> 
+                    </footer>  
+            </body>
+            </html>
+            </xmp>
+        </td>
+        
+        <td>
+          <xmp>
+            <html>
+            <head>
+                <title>Document</title>
+            </head>
+            <body>
+                <div class="header">
+                     <div class="nav"> 
+                         <ul id="nav-items"> 
+                             <li class="nav-links"> <a href="">Home</a> </li>
+                              <li class="nav-links"> <a href="">About Us</a> </li> 
+                            </ul>
+                    </div> 
+                </div> 
+                <div class="main"> 
+                    <h1>Here is the new heading </h1> 
+                </div> 
+                <div class="content"> 
+                    <!-- your content --> 
+                </div> 
+                <div class="footer"> 
+                    <!-- your footer -->
+                 </div> 
+            </body>
+            </html>
+            </xmp>
+        </td></tr>
+        </tbody>
+        </table>
      <h3>Read More about HTML5 New Elements at <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Link</a> </h3>
+  <p>&nbsp;</p>
+  <h2 id="boiler">HTML5 Boilerplate</h2>
+  <p>Boilerplate code (boilerplate) are sections of code that are repeated in multiple places with very little to no variation. 
+  </p><p>In HTML, a boilerplate is the topmost part of the HTML document that is added when you start to create HTML pages. The boilerplate is added to all of your HTML pages.
+</p>
+  <h3>In Visual Studio code, you can get the initial part (boilerplate) of the HTML
+     document by typing html:5 or ! </h3>
+     <xmp>
+      <!DOCTYPE html> 
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+      </head>
+      <body>
+         
+      </body>
+      </html>
+      </xmp>
+      
+    <h4>Let's look into each of those line</h4>
+    <h5>&lt;!DOCTYPE html&gt;</h5>
+<p>This is the declaration to tell the browser what type of document to expect.
+   You must start your HTML pages with a  &lt;!DOCTYPE&gt; declaration.
+ </p>
+  <p>Your HTML pages will work fine even without the declaration however some of the HTML5 tags such as an article
+     or a footer may not be supported by the browser.</p>
+     <h5>&lt;html lang="en"&gt;</h5>
+    <p>Lang attribute inside the HTML tag sets the language of the webpage. It enhances accessibility that is the
+       screen reader will know the language and will pronounce the text correctly.</p> 
+       <h5>&lt;head&gt; ….. &lt;/head&gt;</h5>
+     <p>
+      Anything that is enclosed in the head tag is not visible in the browser but 
+      includes valuable information such as the metadata
+       which describes the document to the machine. 
+       It contains information such as the page &lt;title&gt;, links to CSS 
+       and other metadata.
+      </p>
+      <h5>&lt;meta charset="utf-8"&gt;</h5>
+     <p>It specifies the document's character encoding. utf-8 is a universal character set that includes most of the characters from any human language. To display your characters properly (Ä, ö, Å), 
+       it is a good idea to include the charset in all HTML pages.</p>
+       <h5>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</h5>
+<p>X-UA-Compatible tells the document what version of Internet Explorer
+   the HTML page should be rendered as. The Modern IE browsers are
+    much more compliant with the web standard and therefore there is
+     no need of writing a separate CSS file for the 
+  IE browsers which used to be a headache a few years back for website developers.</p>
+  <h5>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</h5>
+    <p>The viewport is the end user’s visible area of a web page
+       which is different for different devices. The visible area on a 
+       mobile phone is smaller than on a computer screen therefore it 
+       is required to control the web page’s dimensions and scaling. 
+       The width=device-width takes into account the screen 
+       width of the device from which a user is viewing the web page
+        while the initial-scale=1.0 sets the initial zoom level for the web page. 
+    </p>     
+  <p>&nbsp;</p>
   <h2 id="ch5">Creating your own HTML5 page</h2>
                 <ol>
                   <li> HTML5 code should begin with specifying the <b> DOCTYPE </b>   </li>
@@ -106,9 +262,12 @@ Elements such as <header>, <footer> and <article> are all considered semantic be
                     with characters %20 that can confuse users </li>
                 </ol> 
 
-
-
+                <p>&nbsp;</p>
+                <h2 id="ex2">Exercise 2</h2>
+                <p>
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vTM7S8QD82OG5DdGwec-0Y_XFyI9wsn-bRyRcgQBLmgNrJfXNdW7oYCS_b8kxD4tw/pub?embedded=true" width="100%" height="700px"></iframe>
 <!-- content ends here -->
+</p>
 <h2>References:</h2>
   <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="blank">Mdn Web Docs </a>
   <h2>To learn more:</h2>
