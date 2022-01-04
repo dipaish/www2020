@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Introduction to Web Development - HTML, CSS & Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <div id="wrap">   
+      
+  <div id="content">
+  <div id="mainpage">
+   <!--[if IE]>
+              <p class="note">This page works perfectly fine with mobile devices and all major 
+                browsers such as Firefox or Google Chrome. Please use at your own risk with Internet Explorer.</p>
+              <![endif]-->
+              <div class="container" style="margin-top:5px">
+                
+                <div class="row">
+                <div class="col-3">
+                      <h3>Table of Content</h3>
+                      <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#cs1">CSS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/dipaish/www2020/blob/master/docs/cssexample.html" target="_blank">CSS Example - Page</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/dipaish/www2020/blob/master/docs/css/learncss.css" target="_blank">CSS Example - CSS Code</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://cssreference.io/" target="_blank">CSS Reference</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#ex3" target="_blank">Exercise 3 - CSS</a>
+                          </li>
+                      </ul>
+                    </div>
+                    
+  
+                <div class="col-9">   
+<!-- content starts here -->
+
+<h2 id="cs1">What is CSS?</h2>
+<p><b>CSS (Cascading Style Sheets)</b> is a style sheet 
+  language for creating great-looking web pages. It
+  describes the presentation of elements in a document. 
+  You define a group of styles that are applied to partical elements
+    on your web page. For example, you want the main heading to be shown 
+    as large red text.
+  </p>
+  <h2>Inline css</h2>
+  <p>It is often used to apply a style for a single html element.</p>
+  <p>To add inline css, you can simply add the style to the corresponding
+      element. 
+  </p>
+  <h3>Example</h3>
+  <xmp><h1 style="color:brown;text-align:left;">This is my heading</h1> </xmp>
+  <xmp><p style="color:red;">This is a paragraph.</p></xmp>
+  <h2>Embedded css</h2>
+  <p>
+      The embedded css or the internal css is written inside
+      the &lt;style&gt; element in the &lt;head&gt; section of your HTML 
+      document. 
+  </p>
+  <h3>Example of embedded css</h3>
+  <xmp>
+      <!DOCTYPE html>
+      <html>
+      <head>
+      <style>
+      body {
+        background-color:red;
+      }
+      h1 {
+        color: blue;
+      }
+      </style>
+      </head>
+      <body>
+      <h1>This is a heading</h1>
+      <p>This is a paragraph.</p>
+      </body>
+      </html>
+  </xmp>
+  <h2>External css</h2>
+  <p>The best way of adding a CSS to your html document
+      is by creating a css file with an extension <b>.css.
+  </b>
+  </p>
+  
+  
+  
+  <h2>Linking the css </h2>
+  <p >To link style.css to index.html add one of the following line somewhere inside the &lt;head&gt; of the HTML document<br>
+      <code>
+          &lt;link rel="stylesheet" href="style.css"&gt; <br>
+          &lt;link href="css/style.css" rel="stylesheet" type="text/css"&gt;<br>
+          &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"&gt;
+      </code>
+  
+  <h2>CSS: Selectors</h2>
+  <img src="images/cssselector.png" width="680px">
+  <ul>
+    <li>CSS selector defines what elements should the CSS property be applied</li>
+    <li>The first part of the CSS rule is a css selector</li>
+  </ul>
+  <h2>CSS Example</h2>
+  <a href="https://raw.githubusercontent.com/dipaish/www2020/master/docs/css/learncss.css" target="blank"><h3>Link to the css file</h3></a>
+
+
+<!-- content ends here -->
+
+<h2>References:</h2>
+  <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="blank">Mdn Web Docs </a>
+  <h2>To learn more:</h2>
+ <a href="https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn" target="blank"> https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn </a><br>
+ <a href="https://www.w3schools.com/html/default.asp" target="blank">https://www.w3schools.com/html/default.asp</a>
+
+</div>
+</div>
+ <div id="footer" >
+  <p style="text-align:center">Deepak KC, <script>document.write( new Date().getFullYear() );</script>  &nbsp; &nbsp;&nbsp;<img src="https://licensebuttons.net/l/by-sa/3.0/88x31.png" >
+    &nbsp;&nbsp;&nbsp;<a class="external" href="http://creativecommons.org/licenses/by-sa/2.5/" rel="noopener" target="blank">CC-BY-SA 2.5</a>
+  </p>
+    </div>
+ 
+  </div>
+  </div>
+  
+</div>
+  </body>
+</html>
