@@ -33,6 +33,10 @@
                             <a class="nav-link" href="#deb">Debugging HTML</a>
                           </li>
                           <li class="nav-item">
+                            <a class="nav-link" href="https://validator.w3.org/" target="_blank">Markup Validation Service</a>
+                          </li>
+                          
+                          <li class="nav-item">
                             <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vQaAe5lzSYQ_YfR8avOLDS7szWFRf2LozFpXEea_FDkDGCO1yDqnfDDmPdibxFWeg/pub" target="_blank">Exercise 2.1</a>
                           </li>
                       </ul>
@@ -229,14 +233,61 @@ Output: <br>
     </blockquote>
     <blockquote>Note: HTML is parsed permissively because when the web was first created, it was decided that allowing people to get their content published was more important than making sure the syntax was absolutely correct. The web would probably not be as popular as it is today, if it had been more strict from the very beginning.</blockquote> 
     </p>
-make a video https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML
+
+<h2>HTML Validation</h2>
+<p>The demonstrated example had errors.As in the this case, since our html code was not 
+  very long, we can search through the lines and correct our errors. 
+  <br><h3>But how do we check errors when the HTML document is complex and very long?</h3>
+</p>
+  <blockquote>The best option is to use Markup Validation Services which is 
+    created and maintained by W3C (the organization that looks after the specifications that define HTML, CSS, and other web technologies.)
+  </blockquote>
+
+<p>The HTML validator will take your HTML document as an input, process it and provides you a report
+  that tells what is wrong with your HTML.
+  <a href="https://validator.w3.org/" target="_blank">HTML Validator</a>
+</p>
+<h3>Lets look into the following html code and try to validate our document</h3>
+<ul>
+  <li>View Source Code : Right Click and View source code to see code of the page</li>
+  <li>Inspect Element: Lets check Inspect Element Feature in Google Chrome</li>
+</ul>
+<xmp>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML debugging examples</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <h1>HTML debugging examples</h1>
+
+    <p>What causes errors in HTML?
+
+    <ul>
+      <li>Unclosed elements: If an element is <strong>not closed properly, then its effect can spread to areas you didn't intend
+
+      <li>Badly nested elements: Nesting elements properly is also very important for code behaving correctly. <strong>strong <em>strong emphasised?</strong> what is this?</em>
+
+      <li>Unclosed attributes: Another common source of HTML problems. Let's look at an example: <a href="https://www.mozilla.org/>link to Mozilla homepage</a>
+    </ul>
+  </body>
+</html>
+</xmp>
 <!-- content ends here -->
 
 <h2>References:</h2>
   <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="blank">Mdn Web Docs </a>
+  <br><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML" target="blank">Debugging HTML </a>
   <h2>To learn more:</h2>
  <a href="https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn" target="blank"> https://www.google.fi/search?sourceid=navclient&ie=UTF-8&q=html%2Blearn </a><br>
- <a href="https://www.w3schools.com/html/default.asp" target="blank">https://www.w3schools.com/html/default.asp</a>
+<a href="https://www.w3schools.com/html/default.asp" target="blank">https://www.w3schools.com/html/default.asp</a>
 
 </div>
 </div>
