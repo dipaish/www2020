@@ -64,7 +64,37 @@ some of them</p>
     that is we can deal with the layout in one dimensiona at a time. We can use flexbox to create flexible and 
     responsive layout. 
 </p>
-<p>To use flex box, we should first define a flex container. 
+<h2>To use flex box:</h2>
+<ol>
+  <li><b>Flex Container/Elements:</b> we should first define a <b>flex container</b> or specify what 
+    <b>elements</b> are used as flexible boxes.</li>
+    <xmp>display: flex;</xmp>
+    <li><b>Columns or Rows: </b>Flexbox in one dimensional. The property <em>flex-direction</em> specifies
+    which direction the flexbox children are in. By defualt it is set to row.</li>
+    <xmp>flex-direction: column;</xmp>
+    <li><b>Wrapping:</b>The equal width and height of flex boxes can result in 
+      the child items overflowing their container wich eventually breaks the layout. 
+      This can be fixed by adding the following to your flex container.
+    </li>
+<xmp>flex-wrap: wrap;</xmp>
+<li><b>Setting the minimum width</b> for the flexbox children item. The following property
+  sets the flexbox children to fit sensibly that is each flex box will be atleast 200px wide. 
+</li>
+<xmp>flex: 200px</xmp>
+<li><b>Flex Box Sizes:</b> </li>
+<xmp>
+  article {
+    <!-- Equal amount of spaces for items -->
+    flex: 1;
+    <!-- on adding the folliwing line, third box takes up
+    twice as much as the available width of the other two -->
+    article:nth-of-type(3) {
+      flex: 2;
+    }
+  }
+</xmp>
+  </ol>
+    
     Use <code>display:flex </code> to the parent html element. All child elements
 with then become flex items.</p>
 <xmp>
@@ -80,6 +110,11 @@ with then become flex items.</p>
 </p>
 <strong>Example of a flexbox layout:</strong>
 <a href="flexbox.html">Link to the Example file</a>
+<h2>Let's work together and get the following layouts</h2>
+<h3>Get HTML code at this link: <a href="flex_box_in_class22.html">Required File</a></h3>
+<h3><a href="images/Lay1.PNG" >Layout 1</a></h3>
+<h3><a href="images/layout2.PNG">Layout 2</a></h3>
+
 <h2>Floats</h2>
 <p>The float property was introduced to allow web developers to 
     implement simple layouts involving an image floating inside 
@@ -104,11 +139,11 @@ with then become flex items.</p>
         <h2 id="ex44">Exercise 4: HTML layout</h2>
 
         <ul>
-          <li>Create a new html page and name it as exercise4.html</li>
+          <li>Create a new html page and name it as exercise4.html. </li>
         <li>Write css to create a template as in the image. Use semantic elements
-          such as header, navbar, article, footer in your css.
+          such as header, navbar, article, footer in your css. The content and some 
+          styles of the page are like you did above. 
         </li>
-        <li>Use random text and images to look like a proper website.</li>
         </ul>
         <strong>Image for the layout</strong><br><br>
         <img src="images/layouttask.PNG" width="680px">
